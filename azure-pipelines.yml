@@ -6,7 +6,7 @@ pool:
 variables:
   ImageName: 'wolfgangofner/microservicedemo:$(Build.BuildId)'
 
- steps:
+steps:
  - task: Docker@2
    displayName: Build an image
    inputs:
