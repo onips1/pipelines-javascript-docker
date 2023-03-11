@@ -3,8 +3,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
- variables:
-   imageName: 'pipelines-javascript-docker'
+variables:
+  ImageName: 'wolfgangofner/microservicedemo:$(Build.BuildId)'
 
  steps:
  - task: Docker@2
